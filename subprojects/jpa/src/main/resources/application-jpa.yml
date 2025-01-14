@@ -1,0 +1,13 @@
+spring-domain-jpa:
+  datasource:
+    url: ${datasources.spring-domain.url}
+    username: ${datasources.spring-domain.username}
+    password: ${datasources.spring-domain.password}
+    driver-class-name: ${datasources.spring-domain.driver-class-name}
+    extension:
+      max-life-time: ${datasources.spring-domain.extension.max-life-time}
+      ddl-auto: ${datasources.spring-domain.extension.ddl-auto}
+      dialect: ${datasources.spring-domain.extension.dialect}
+      show-sql: ${datasources.spring-domain.extension.show-sql}
+      format-sql: ${datasources.spring-domain.extension.format-sql}
+      use-sql-comments: ${datasources.spring-domain.extension.use-sql-comments}
