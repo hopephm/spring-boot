@@ -7,4 +7,9 @@ import org.springframework.context.annotation.Configuration
     basePackages = ["kr.hope.springboot.jpa"],
 )
 @Configuration
-class TestConfig
+class DefaultConfig {
+    companion object {
+        const val DEFAULT_PROFILES = "test"
+        const val TEST_PROPERTY_SOURCE = "classpath:application-test.yml"
+    }
+}
