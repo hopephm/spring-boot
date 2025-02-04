@@ -1,0 +1,11 @@
+spring:
+  data:
+    redis:
+      custom:
+        enable: false
+      host: unexist-redis.internal.c12345.ap-neast-2-mz.ec2.cloud.rlrcp.com
+      port: 6379
+      ssl:
+        enabled: true
+      username: username
+      password: password
