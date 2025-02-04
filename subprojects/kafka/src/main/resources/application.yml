@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:kafka}
+    include:
+      - boot3
+
+server:
+  port: 8080
+  shutdown: graceful
+
+kafka:
+  hope:
+    topic: msk.kafka.hope
+    group-id: springboot.hope.kafka-consumer
+    auto-start-up: true

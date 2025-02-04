@@ -2,6 +2,7 @@ rootProject.name = "spring-boot"
 
 include(
     "jpa",
+    "kafka",
 )
 
 makeProjectDir(rootProject, "subprojects")

@@ -1,0 +1,23 @@
+logging:
+  level:
+    root: INFO
+
+spring:
+  kafka:
+    consumer:
+      max-poll-records: 1
+      fetch-max-wait: 300000
+      bootstrap-servers:
+        - b-1.hopeunexistservicems.asp21y.c2.kafka.ap-northeast-2.amazonaws.com:9098 # I AM endpoint
+        - b-2.hopeunexistservicems.asp21y.c2.kafka.ap-northeast-2.amazonaws.com:9098 # I AM endpoint
+      auto-offset-reset: latest
+      properties:
+        region: ap-northeast-2
+        sasl:
+          mechanism: AWS_MSK_IAM
+          jaas:
+            config: software.amazon.msk.auth.iam.IAMLoginModule required;
+          client:
+            callback:
+              handler:
+                class: software.amazon.msk.auth.iam.IAMClientCallbackHandler
