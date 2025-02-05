@@ -2,6 +2,7 @@ logging:
   level:
     root: INFO
 
+# https://github.com/aws/aws-msk-iam-auth
 spring:
   kafka:
     consumer:
