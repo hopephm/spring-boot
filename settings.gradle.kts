@@ -2,6 +2,7 @@ rootProject.name = "spring-boot"
 
 include(
     "orm:jpa",
+    "util:aop",
     "infrastructure:kafka",
     "infrastructure:redis",
     "infrastructure:sqs",
