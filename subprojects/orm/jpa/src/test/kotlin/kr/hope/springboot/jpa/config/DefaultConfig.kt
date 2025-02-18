@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
 
 @ComponentScan(
-    basePackages = ["kr.hope.springboot.jpa"],
+    basePackages = ["kr.hope.springboot.orm.jpa"],
 )
 @Configuration
 class DefaultConfig {

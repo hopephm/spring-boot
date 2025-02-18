@@ -1,8 +1,8 @@
 package kr.hope.springboot.orm.jpa.domain.board
 
-import kr.hope.springboot.jpa.domain.account.QAccount.account
-import kr.hope.springboot.jpa.domain.board.QBoard.board
-import kr.hope.springboot.jpa.domain.member.QMember.member
+import kr.hope.springboot.orm.jpa.domain.account.QAccount.account
+import kr.hope.springboot.orm.jpa.domain.board.QBoard.board
+import kr.hope.springboot.orm.jpa.domain.member.QMember.member
 import kr.hope.springboot.orm.jpa.querydsl.DomainQuerydslSupport
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
