@@ -4,6 +4,7 @@ include(
     "orm:jpa",
     "infrastructure:kafka",
     "infrastructure:redis",
+    "infrastructure:sqs",
 )
 
 makeProjectDir(rootProject, "subprojects")

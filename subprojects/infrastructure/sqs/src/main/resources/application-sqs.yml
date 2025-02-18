@@ -1,0 +1,13 @@
+# https://docs.spring.io/spring-cloud-aws/docs/2.2.6.RELEASE/2.2.6.RELEASE/reference/html/
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: ap-northeast-2
+    credentials:
+      useDefaultAwsCredentialsChain: true
+
+sqs:
+  hope:
+    queue: hope-sample-queue
