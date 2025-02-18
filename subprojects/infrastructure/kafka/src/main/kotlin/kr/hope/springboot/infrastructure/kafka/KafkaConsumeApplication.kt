@@ -5,7 +5,7 @@ import org.springframework.boot.runApplication
 
 @SpringBootApplication(
     scanBasePackages = [
-        "kr.hope.springboot.kafka",
+        "kr.hope.springboot.infrastructure.kafka",
     ]
 )
 class KafkaConsumeApplication

@@ -1,3 +1,4 @@
+# https://github.com/spring-projects/spring-boot/blob/7f6f45680ec401a9b277da197eaadc174a60aafa/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.java
 spring:
   data:
     redis:

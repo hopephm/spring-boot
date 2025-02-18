@@ -2,6 +2,7 @@ logging:
   level:
     root: INFO
 
+# https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/kafka/KafkaAutoConfiguration.java
 # https://github.com/aws/aws-msk-iam-auth
 spring:
   kafka:
