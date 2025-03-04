@@ -1,6 +1,7 @@
 rootProject.name = "spring-boot"
 
 include(
+    "batch",
     "orm:jpa",
     "util:aop",
     "infrastructure:kafka",
