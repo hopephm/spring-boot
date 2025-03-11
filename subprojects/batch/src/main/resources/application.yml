@@ -1,6 +1,9 @@
 spring:
   profiles:
     active: ${SPRING_PROFILES_ACTIVE:batch}
+    include:
+      - jpa
+      - db
 
 server:
   port: 7070

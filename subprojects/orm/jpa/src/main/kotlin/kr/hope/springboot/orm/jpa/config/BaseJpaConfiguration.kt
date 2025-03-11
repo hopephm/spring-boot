@@ -31,6 +31,11 @@ object JpaCommon {
     }
 }
 
+/**
+ * Multiple Jpa Auditing configuration
+ * @see https://github.com/spring-projects/spring-data-jpa/blob/0187162bfaae9eb3033093e9041b989312f4d036/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/config/JpaAuditingRegistrar.java
+ * @see https://github.com/spring-projects/spring-data-commons/blob/main/src/main/java/org/springframework/data/auditing/config/AuditingBeanDefinitionRegistrarSupport.java
+ */
 @EnableJpaAuditing
 abstract class BaseJpaConfiguration {
     abstract fun basePackage(): String

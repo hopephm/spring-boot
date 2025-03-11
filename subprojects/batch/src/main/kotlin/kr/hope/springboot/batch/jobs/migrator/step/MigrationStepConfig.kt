@@ -4,7 +4,7 @@ import kr.hope.springboot.batch.domain.MockEntity
 import kr.hope.springboot.batch.domain.MockService
 import kr.hope.springboot.batch.jobs.migrator.reader.SourceItemReader
 import org.springframework.batch.core.Step
-import org.springframework.batch.core.configuration.annotation.JobScope
+import org.springframework.batch.core.repository.JobRepository
 import org.springframework.batch.core.step.builder.StepBuilder
 import org.springframework.batch.item.ItemProcessor
 import org.springframework.batch.item.ItemWriter
@@ -19,14 +19,15 @@ class MigrationStepConfig(
     private val transactionManager: PlatformTransactionManager,
 ) {
     companion object {
+        private const val STEP_BUILDER_NAME = "stepBuilder"
         private const val CHUNK = 1000
     }
 
     @Bean
-    @JobScope
     fun migration(
-        stepBuilder: StepBuilder,
+        jobRepository: JobRepository,
     ): Step {
+        val stepBuilder = StepBuilder(STEP_BUILDER_NAME, jobRepository)
         return stepBuilder
             .chunk<MockEntity, MockEntity>(CHUNK, transactionManager)
             .reader(reader())
